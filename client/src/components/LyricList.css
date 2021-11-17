@@ -1,0 +1,19 @@
+.material-icons {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vote-box {
+  display: flex;
+  align-items: center;
+}
+
+.likes-count {
+  width: 20px;
+  text-align: right;
+}

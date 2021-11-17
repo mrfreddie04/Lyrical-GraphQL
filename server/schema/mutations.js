@@ -36,10 +36,10 @@ const mutation = new GraphQLObjectType({
       }
     },
     deleteSong: {
-      type: SongType,
+      type:  SongType, // { deleteCount: GraphQLInt},
       args: { id: { type: GraphQLID } },
       resolve(parentValue, { id }) {
-        return Song.remove({ _id: id });
+        return Song.findByIdAndRemove(id);
       }
     }
   }
